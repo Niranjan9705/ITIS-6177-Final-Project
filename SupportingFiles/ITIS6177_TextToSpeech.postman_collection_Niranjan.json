@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "8c95e6ee-b8bc-4cdc-87e8-3b9b361eaed3",
+		"name": "ITIS6177_TextToSpeech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"ndeshine@uncc.edu\",\n    \"password\" : \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.132.24:3000/login",
+					"host": [
+						"137",
+						"184",
+						"132",
+						"24"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"ndeshine@uncc.edu\",\n    \"password\" : \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.132.24:3000/register",
+					"host": [
+						"137",
+						"184",
+						"132",
+						"24"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TextToSpeech",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "137.184.132.24:3000/text2speech?text=my name is niranjan",
+					"host": [
+						"137",
+						"184",
+						"132",
+						"24"
+					],
+					"port": "3000",
+					"path": [
+						"text2speech"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "my name is niranjan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "137.184.132.24:3000/logout",
+					"host": [
+						"137",
+						"184",
+						"132",
+						"24"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
